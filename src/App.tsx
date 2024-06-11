@@ -3,8 +3,8 @@ import "./App.css";
 function App() {
   return (
     <>
-      <nav>
-        <div className="flex item-center justify-between py-8 container w-[95%] m-auto">
+      <nav className="bg-gray-200">
+        <div className="flex item-center flex-col md:flex-row gap-7 justify-between py-8 container w-[95%] m-auto">
           <h1 className="text-3xl font-bold">Catalog Task</h1>
           <ul className="flex items-center gap-3 flex-wrap">
             <li>
@@ -31,6 +31,8 @@ function App() {
           </ul>
         </div>
       </nav>
+
+      <hr />
 
       <section>
         <div className="container  w-[95%] m-auto">

@@ -37,7 +37,7 @@ function App() {
       <section>
         <div className="container  w-[95%] m-auto">
           <form action="">
-            <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 md:grid-cols-6">
+            <div className="mt-8 md:w-[60%] w-full mx-auto grid grid-cols-1 gap-3 md:grid-cols-6">
               <div className="col-span-3">
                 <label
                   htmlFor="number"
@@ -50,7 +50,7 @@ function App() {
                     name="number"
                     id="number"
                     autoComplete="given-name"
-                    className="block w-full rounded-md border-0 py-3 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-[#ff613c] sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-2 px-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-[#4361ee] sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -66,7 +66,7 @@ function App() {
                     type="text"
                     name="request_item"
                     id="request_item"
-                    className="block w-full rounded-md border-0 py-3 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-[#ff613c] sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-2 px-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-[#4361ee] sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -83,7 +83,7 @@ function App() {
                     name="requested_for"
                     type="text"
                     autoComplete="requested_for"
-                    className="block w-full rounded-md border-0 py-3 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-[#ff613c] sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-2 px-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-[#4361ee] sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -98,7 +98,7 @@ function App() {
                   <select
                     name=""
                     id=""
-                    className="block w-full rounded-md border-0 py-3 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-1 focus:ring-inset focus:ring-[#ff613c]  sm:text-sm sm:leading-6">
+                    className="block w-full rounded-md border-0 py-2 px-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-1 focus:ring-inset focus:ring-[#4361ee]  sm:text-sm sm:leading-6">
                     <option value="">Choose State</option>
                   </select>
                 </div>
@@ -115,7 +115,7 @@ function App() {
                     type="text"
                     name="configuration_item"
                     id="configuration_item"
-                    className="block w-full rounded-md border-0 py-3 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-[#ff613c] sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-2 px-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-[#4361ee] sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -130,7 +130,7 @@ function App() {
                   <select
                     name=""
                     id=""
-                    className="block w-full rounded-md border-0 py-3 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-1 focus:ring-inset focus:ring-[#ff613c]  sm:text-sm sm:leading-6">
+                    className="block w-full rounded-md border-0 py-2 px-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-1 focus:ring-inset focus:ring-[#4361ee]  sm:text-sm sm:leading-6">
                     <option value="">Choose Priority</option>
                   </select>
                 </div>
@@ -148,7 +148,7 @@ function App() {
                     name="assignment_group"
                     id="assignment_group"
                     autoComplete="address-level2"
-                    className="block w-full rounded-md border-0 py-3 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-[#ff613c] sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-2 px-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-[#4361ee] sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -165,7 +165,7 @@ function App() {
                     name="assign_to"
                     id="assign_to"
                     autoComplete="address-level1"
-                    className="block w-full rounded-md border-0 py-3 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-[#ff613c] sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-2 px-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-[#4361ee] sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -182,7 +182,7 @@ function App() {
                     name="watch_list"
                     id="watch_list"
                     autoComplete="watch_list"
-                    className="block w-full rounded-md border-0 py-3 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-[#ff613c] sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-2 px-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-[#4361ee] sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -198,7 +198,7 @@ function App() {
                     id="description"
                     name="description"
                     rows={3}
-                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-[#ff613c]  sm:text-sm sm:leading-6"></textarea>
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-[#4361ee]  sm:text-sm sm:leading-6"></textarea>
                 </div>
               </div>
             </div>

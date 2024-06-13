@@ -5,12 +5,16 @@ import img from "./assets/menu.svg";
 function App() {
   const [index, setIndex] = useState(0);
   return (
-    <>
-      <nav className="bg-slate-100">
-        <div className="flex item-center flex-col md:flex-row gap-7 justify-between py-8 container w-[95%] m-auto">
+    <div className="bg-gray-100">
+      <div className="w-full h-[8px] bg-yellow-400"></div>
+      <nav className="">
+        <div className="flex item-center flex-col md:flex-row gap-7 justify-between py-2 container w-[95%] m-auto">
           <div className="flex items-center gap-4">
             <img src={img} alt="ee" />
-            <h1 className="text-2xl font-bold">Catalog Task SCTASK1883192</h1>
+            <h1 className="text-sm font-bold">
+              Catalog Task <br />
+              SCTASK1883192
+            </h1>
           </div>
           <ul className="flex items-center gap-3 flex-wrap">
             <li>
@@ -40,11 +44,11 @@ function App() {
 
       <hr />
 
-      <section>
-        <div className="container  w-[95%] m-auto">
+      <section className="bg-white py-[40px]">
+        <div className="container w-[95%] m-auto">
           <form action="">
-            <div className="my-10 md:w-[60%] w-full mx-auto grid grid-cols-1 gap-3 md:grid-cols-6">
-              <div className="col-span-3">
+            <div className="my-8 md:w-[90%] w-full mx-auto grid grid-cols-1 gap-3 md:grid-cols-6">
+              <div className="col-span-2">
                 <label
                   htmlFor="number"
                   className="block text-sm font-medium leading-6 text-gray-900">
@@ -61,7 +65,7 @@ function App() {
                 </div>
               </div>
 
-              <div className="col-span-3">
+              <div className="col-span-2">
                 <label
                   htmlFor="request_item"
                   className="block text-sm font-medium leading-6 text-gray-900">
@@ -77,7 +81,7 @@ function App() {
                 </div>
               </div>
 
-              <div className="col-span-3">
+              <div className="col-span-2">
                 <label
                   htmlFor="requested_for"
                   className="block text-sm font-medium leading-6 text-gray-900">
@@ -94,7 +98,7 @@ function App() {
                 </div>
               </div>
 
-              <div className="col-span-3">
+              <div className="col-span-2">
                 <label
                   htmlFor="state"
                   className="block text-sm font-medium leading-6 text-gray-900">
@@ -110,7 +114,7 @@ function App() {
                 </div>
               </div>
 
-              <div className="col-span-3">
+              <div className="col-span-2">
                 <label
                   htmlFor="configuration_item"
                   className="block text-sm font-medium leading-6 text-gray-900">
@@ -126,7 +130,7 @@ function App() {
                 </div>
               </div>
 
-              <div className="col-span-3">
+              <div className="col-span-2">
                 <label
                   htmlFor="priority"
                   className="block text-sm font-medium leading-6 text-gray-900">
@@ -212,9 +216,9 @@ function App() {
         </div>
       </section>
       <hr />
-      <section className="py-9 bg-slate-100">
+      <section className="">
         <div className="container mx-auto w-[95%] ">
-          <div className="md:w-[60%] w-full mx-auto p-6">
+          <div className="md:w-[90%] w-full mx-auto p-6">
             <div className="bg-white outline rounded-lg shadow-md overflow-hidden outline-gray-200">
               <div className=" flex items-center">
                 <div
@@ -233,22 +237,22 @@ function App() {
                   Task Variables
                 </div>
               </div>
-                <hr />
+              <hr />
 
               <div className="mt-8 p-3">
                 {index === 0 ? (
-                  <div>
+                  <div className="flex items-center gap-3">
                     <h3>Work Notes</h3>
-                    <div className="bg-slate-50 mt-5  shadow p-5">
+                    <div className="bg-slate-50 w-[80%] shadow p-5">
                       <ul className="">
                         <li className="list-disc	">Work Notes</li>
                       </ul>
                     </div>
                   </div>
                 ) : (
-                  <div>
+                  <div className="flex items-center gap-3">
                     <h3>Tasks Variables</h3>
-                    <div className="bg-slate-50 mt-5  shadow p-5">
+                    <div className="bg-slate-50 w-[80%] shadow p-5">
                       <ul className="">
                         <li className="list-disc	">Tasks Variables</li>
                       </ul>
@@ -260,7 +264,7 @@ function App() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 

@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: "Catamaran", sans-serif;
+  font-family: sans-serif;
 
   line-height: 1.5;
   font-weight: 400;
@@ -51,7 +51,7 @@ button {
   border: 1px solid #4361ee;
   border-radius: 15px;
   box-sizing: border-box;
-  color: #3b3b3b;
+  color: #4361ee;
   cursor: pointer;
   display: inline-block;
   font-family: "Catamaran", sans-serif;
@@ -107,6 +107,8 @@ li::marker {
 .tab-btn {
   padding: 10px 20px;
    appearance: none;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
   background-color: rgb(223, 223, 223);
   border-top: 3px solid transparent;
   border-right: 1px solid transparent;

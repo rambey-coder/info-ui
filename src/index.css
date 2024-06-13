@@ -80,6 +80,15 @@ button:hover {
   transform: translateY(-2px);
 }
 
+.active-button {
+  color: #fff;
+  background-color: white !important; 
+  border-right: 1px solid rgb(219, 219, 219) !important;
+ border-top: 3px solid green !important;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px; */
+  /* transform: translateY(-2px); */
+}
+
 button:active {
   box-shadow: none;
   transform: translateY(0);
@@ -89,4 +98,25 @@ input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
   outline: 0;
+}
+
+li::marker {
+  color: #e8dc33;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+   appearance: none;
+  background-color: rgb(223, 223, 223);
+  border-top: 3px solid transparent;
+  border-right: 1px solid transparent;
+  box-sizing: border-box;
+  color: #3b3b3b;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  outline: none;
 }

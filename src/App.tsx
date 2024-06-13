@@ -1,11 +1,17 @@
 import "./App.css";
+import { useState } from "react";
+import img from "./assets/menu.svg";
 
 function App() {
+  const [index, setIndex] = useState(0);
   return (
     <>
-      <nav className="bg-gray-200">
+      <nav className="bg-slate-100">
         <div className="flex item-center flex-col md:flex-row gap-7 justify-between py-8 container w-[95%] m-auto">
-          <h1 className="text-3xl font-bold">Catalog Task</h1>
+          <div className="flex items-center gap-4">
+            <img src={img} alt="ee" />
+            <h1 className="text-2xl font-bold">Catalog Task SCTASK1883192</h1>
+          </div>
           <ul className="flex items-center gap-3 flex-wrap">
             <li>
               <button>Discuss</button>
@@ -37,7 +43,7 @@ function App() {
       <section>
         <div className="container  w-[95%] m-auto">
           <form action="">
-            <div className="mt-8 md:w-[60%] w-full mx-auto grid grid-cols-1 gap-3 md:grid-cols-6">
+            <div className="my-10 md:w-[60%] w-full mx-auto grid grid-cols-1 gap-3 md:grid-cols-6">
               <div className="col-span-3">
                 <label
                   htmlFor="number"
@@ -203,6 +209,55 @@ function App() {
               </div>
             </div>
           </form>
+        </div>
+      </section>
+      <hr />
+      <section className="py-9 bg-slate-100">
+        <div className="container mx-auto w-[95%] ">
+          <div className="md:w-[60%] w-full mx-auto p-6">
+            <div className="bg-white outline rounded-lg shadow-md overflow-hidden outline-gray-200">
+              <div className=" flex items-center">
+                <div
+                  onClick={() => setIndex(0)}
+                  className={`w-[150px] tab-btn ${
+                    index === 0 ? " active-button" : ""
+                  }`}>
+                  Work Notes{" "}
+                </div>
+                <div
+                  onClick={() => setIndex(1)}
+                  className={`w-[150px] tab-btn ${
+                    index === 1 ? "active-button" : ""
+                  }`}>
+                  {" "}
+                  Task Variables
+                </div>
+              </div>
+                <hr />
+
+              <div className="mt-8 p-3">
+                {index === 0 ? (
+                  <div>
+                    <h3>Work Notes</h3>
+                    <div className="bg-slate-50 mt-5  shadow p-5">
+                      <ul className="">
+                        <li className="list-disc	">Work Notes</li>
+                      </ul>
+                    </div>
+                  </div>
+                ) : (
+                  <div>
+                    <h3>Tasks Variables</h3>
+                    <div className="bg-slate-50 mt-5  shadow p-5">
+                      <ul className="">
+                        <li className="list-disc	">Tasks Variables</li>
+                      </ul>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
